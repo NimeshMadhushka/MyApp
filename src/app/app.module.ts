@@ -6,6 +6,7 @@ import { MyApp } from './app.component';
 import { AboutPage } from '../pages/about/about';
 import { ContactPage } from '../pages/contact/contact';
 import { HomePage } from '../pages/home/home';
+import { SearchPage } from '../pages/search/search';
 import { TabsPage } from '../pages/tabs/tabs';
 import { SignupPage } from '../pages/signup/signup';
 
@@ -19,6 +20,7 @@ import { LoginPage } from '../pages/login/login';
     MyApp,
     AboutPage,
     ContactPage,
+    SearchPage,
     WelcomePage,
     LoginPage,
     SignupPage,
@@ -34,6 +36,7 @@ import { LoginPage } from '../pages/login/login';
     MyApp,
     AboutPage,
     ContactPage,
+    SearchPage,
     WelcomePage,
     LoginPage,
     SignupPage,
