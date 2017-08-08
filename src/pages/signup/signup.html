@@ -1,0 +1,38 @@
+<ion-content class="background">
+    <h1>Sign up Hear!</h1>
+    <ion-card>
+        <ion-card-header>
+            Sign up hear after filling all the feald
+        </ion-card-header>
+        <ion-card-content>
+
+            <ion-list no-lines>
+                <ion-item>
+                    <ion-label floating>Device ID</ion-label>
+                    <ion-input type="text" [(ngModel)]="userData.id"></ion-input>
+                </ion-item>
+                <ion-item>
+                    <ion-label floating>User Name</ion-label>
+                    <ion-input type="text" [(ngModel)]="userData.name"></ion-input>
+                </ion-item>
+                <ion-item>
+                    <ion-label floating>Password</ion-label>
+                    <ion-input type="password" [(ngModel)]="userData.Password"></ion-input>
+                </ion-item>
+                <ion-item>
+                    <ion-label floating>retype The Passwprd</ion-label>
+                    <ion-input type="password"></ion-input>
+                </ion-item>
+                <button ion-button color="danger" block outline (click)="goHomePage();">Signup</button>
+                <ion-item>
+                    <p>Do you alrady have an caaount?</p>
+                    <button ion-button color="praimary" (click)="goToLoginPage();">Go to Login</button>
+                </ion-item>
+
+                <!-- <button ion-button color="danger" block outline (click)="Login();"> LOGIN</button>-->
+
+            </ion-list>
+
+        </ion-card-content>
+    </ion-card>
+</ion-content>

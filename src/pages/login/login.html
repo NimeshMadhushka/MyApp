@@ -1,0 +1,30 @@
+<ion-content class="background">
+    <h1>LOGIN TO THE SYSTEM</h1>
+    <ion-card>
+        <ion-card-header>
+            Pleace enter Your User Name <br>and Password
+        </ion-card-header>
+        <ion-card-content>
+
+            <ion-list no-lines>
+                <ion-item>
+                    <ion-label floating>User name</ion-label>
+                    <ion-input type="text" [(ngModel)]="userData.username"></ion-input>
+                </ion-item>
+                <ion-item>
+                    <ion-label floating>Password</ion-label>
+                    <ion-input type="password" [(ngModel)]="userData.password"></ion-input>
+                </ion-item>
+
+                <button ion-button color="danger" block outline (click)="goToHomePage();">LOGIN</button>
+                <!-- <button ion-button color="danger" block outline (click)="Login();"> LOGIN</button>-->
+                <ion-item>
+                    <p>Don't you have an account</p>
+                </ion-item>
+                <button ion-button color="praimary" (click)="goToSignupPage();">Go to Signup</button>
+
+            </ion-list>
+
+        </ion-card-content>
+    </ion-card>
+</ion-content>
