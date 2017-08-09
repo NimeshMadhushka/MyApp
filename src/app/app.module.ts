@@ -9,6 +9,7 @@ import { HomePage } from '../pages/home/home';
 import { SearchPage } from '../pages/search/search';
 import { TabsPage } from '../pages/tabs/tabs';
 import { SignupPage } from '../pages/signup/signup';
+import { DetailsPage } from '../pages/details/details'
 
 import { StatusBar } from '@ionic-native/status-bar';
 import { SplashScreen } from '@ionic-native/splash-screen';
@@ -20,6 +21,7 @@ import { LoginPage } from '../pages/login/login';
     MyApp,
     AboutPage,
     ContactPage,
+    DetailsPage,
     SearchPage,
     WelcomePage,
     LoginPage,
@@ -36,6 +38,7 @@ import { LoginPage } from '../pages/login/login';
     MyApp,
     AboutPage,
     ContactPage,
+    DetailsPage,
     SearchPage,
     WelcomePage,
     LoginPage,
