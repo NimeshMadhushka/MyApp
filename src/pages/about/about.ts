@@ -94,8 +94,8 @@ export class BasicPage {
     ]
   }
 
-  openDetailsPage(item) {
-    this.nav.push(AboutPage, { item: item });
+  openAboutPage(item) {
+    this.nav.push(BasicPage, { item: item });
   }
 
 }
