@@ -1,20 +1,17 @@
 <ion-content class="card-background-page">
-    <ion-row no-padding>
-        <ion-col text-center>
-            <h1 class="card-hedding">Home</h1>
-        </ion-col>
-        <ion-col text-right>
-            <h6>My Name</h6>
-        </ion-col>
-        <ion-col text-right>
-            <ion-avatar class="item-avatar">
+
+    <ion-card>
+        <ion-item class="card-item">
+            <ion-avatar item-start>
                 <img src="../../assets/img/avatar1.jpg">
             </ion-avatar>
-        </ion-col>
-        <button ion-button block color="light" (click)="login()">Login</button>
-        <button ion-button block color="light" (click)="signup()">Signup</button>
-    </ion-row>
-
+            <h2>Finn</h2>
+            <h3>Don't Know What To Do!</h3>
+            <p>I've had a pretty messed up day...</p>
+            <button ion-button item-right round color="primary" (click)="login()">Login</button>
+        </ion-item>
+    </ion-card>
+    <!--<button ion-button block color="light" (click)="signup()">Signup</button>-->
     <ion-card>
         <button (click)="goToDetailsPage()" block>
      <img src="../../assets/img/card-saopaolo.png">
