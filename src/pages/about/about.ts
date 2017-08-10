@@ -1,6 +1,5 @@
 import { Component } from '@angular/core';
-import { Events } from 'ionic-angular';
-import { NavController, NavParams } from 'ionic-angular';
+import { NavController } from 'ionic-angular';
 import {HttpServiceProvider} from '../../providers/http-service/http-service';
 
 @Component({
@@ -10,11 +9,11 @@ import {HttpServiceProvider} from '../../providers/http-service/http-service';
 
 export class AboutPage {
 
-constructor(private httpServiceProvider: HttpServiceProvider) {
-  this.getJsonData();
+constructor(public navCtrl: NavController, public httpServiceProvider: HttpServiceProvider){
 }  
-getJsonData(){
-  this.httpServiceProvider.getJsonData().subscribe(data =>console.log(data));
+
+ionViewLoad(){
+  this.httpServiceProvider.getJsonData();
 }
 
 }

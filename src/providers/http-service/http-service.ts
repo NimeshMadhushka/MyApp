@@ -1,7 +1,7 @@
 import { Injectable } from '@angular/core';
-import { Http, Response } from '@angular/http';
+import { Http } from '@angular/http';
 import 'rxjs/add/operator/map';
-import 'rxjs/add/operator/do';
+
 
 /*
   Generated class for the HttpServiceProvider provider.
@@ -11,16 +11,17 @@ import 'rxjs/add/operator/do';
 */
 @Injectable()
 export class HttpServiceProvider {
-  private url: string= "http://lacalhost:technologies/"
 
   constructor(private http: Http) {
-    console.log('Hello HttpServiceProvider Provider');
+    console.log('Hello!');
   }
 
   getJsonData(){
+    
 
-    this.http.get(this.url)
-    .do((res: Responce) => console.log(res));
+   this.http.get('../../assets/data/technologies.json').map(res=>res.json()).subscribe(data=>{
+    console.log(data);
+   });
   }
 
 }
