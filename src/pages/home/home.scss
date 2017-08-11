@@ -5,6 +5,11 @@ page-home {
             position: relative;
             text-align: center;
         }
+        .button-icon {
+            font-size: 23px !important;
+            color: #ddd;
+            line-height: 10px!important;
+        }
         .icons {
             background-color: #fff;
             border: 1.7px solid #fffc9d;
@@ -33,8 +38,6 @@ page-home {
             text-align: right;
         }
         .card-item {
-            width: 100%;
-            height: 35%;
             background: linear-gradient(1deg, #ddd, #aad7eC)
         }
         .card-title {

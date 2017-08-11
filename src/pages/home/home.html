@@ -1,16 +1,16 @@
-<ion-header>
-    <ion-navbar>
-        <ion-title>Home</ion-title>
-        <ion-buttons end>
-            <button large (click)="goToProfilePage()">
-                <ion-icon name="person"  >profile</ion-icon>
-            </button>
-        </ion-buttons>
-
-    </ion-navbar>
-</ion-header>
 <ion-content class="card-background-page">
-
+    <button class="button-icon " (click)="login()">
+    <ion-card>
+        <ion-item class="card-item">
+            <ion-avatar item-start>
+                <img src="../../assets/img/avatar1.jpg">
+            </ion-avatar>
+            <h2>Nimesh</h2>
+            <h4>developing an app</h4>
+            <p>I've had a pretty messed up day...</p>
+        </ion-item>
+    </ion-card>
+</button>
     <!--<button ion-button block color="light" (click)="signup()">Signup</button>-->
     <ion-card>
         <button (click)="goToDetailsPage()" block>
