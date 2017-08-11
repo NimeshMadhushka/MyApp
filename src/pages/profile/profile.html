@@ -1,0 +1,65 @@
+<!--
+  Generated template for the ProfilePage page.
+
+  See http://ionicframework.com/docs/components/#navigation for more info on
+  Ionic pages and navigation.
+-->
+<ion-header>
+
+    <ion-navbar>
+        <ion-title>profile</ion-title>
+    </ion-navbar>
+
+</ion-header>
+
+
+<ion-content padding>
+    <ion-row class="header">
+        <ion-col col-3>
+            <img src="../../assets/img/avatar1.jpg">
+        </ion-col>
+        <ion-col col-md-2 class="button-container">
+            <button class="icons" style="border: none; " (click)="login()">
+                <ion-icon name="cog"></ion-icon>
+            </button>
+        </ion-col>
+        <ion-col col-7 class="button-container">
+            <ion-row>
+                <button class="icons">
+                <ion-icon name="people"(click)="login()"></ion-icon>
+            </button>
+                <button ion-button round outline class="icons" (click)="login()">Log In</button>
+            </ion-row>
+            <ion-row>
+                <ion-col></ion-col>
+            </ion-row>
+        </ion-col>
+    </ion-row>
+
+    <ion-row>
+        <ion-col col-12>
+            <h4 class="name">John Smith</h4>
+            <p class="twittername">@johnsmith</p>
+            <p>I've had a pretty messed up day...</p>
+        </ion-col>
+    </ion-row>
+
+    <ion-row>
+        <ion-col col-3>
+            <ion-icon name="pin"></ion-icon> Adelaide
+        </ion-col>
+        <ion-col col-9>
+            <ion-icon name="link"></ion-icon> johnsmith.com
+        </ion-col>
+    </ion-row>
+
+    <ion-row>
+        <ion-col col-4>
+            <strong>300</strong> FOLLOWING
+        </ion-col>
+        <ion-col col-8>
+            <strong>300</strong> FOLLOWERS
+        </ion-col>
+    </ion-row>
+
+</ion-content>

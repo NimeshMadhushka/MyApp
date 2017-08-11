@@ -4,10 +4,32 @@
     </ion-navbar>
 </ion-header>
 <ion-content>
-    <ion-list>
-        <button ion-item *ngFor="let item of items" (click)="openAboytPage(item)" icon-start>
-      <ion-icon [name]="'logo-' + item.icon" [ngStyle]="{'color': item.color}" item-start></ion-icon>
-      {{ item.title }}
-    </button>
-    </ion-list>
+    <ion-grid>
+        <ion-row>
+            <ion-col>
+                <h4>John Smith</h4>
+            </ion-col>
+            <ion-col col-3>
+                <img src="../../assets/img/avatar1.jpg">
+            </ion-col>
+        </ion-row>
+    </ion-grid>
+    <ion-grid>
+        <ion-row>
+            <ion-col col-6>
+                <div>
+                    <h5 style="color:#110000;">ão Paulo</h5>
+                </div>
+            </ion-col>
+            <ion-col col-6>
+                <div>
+                    <h6 style="color:#111111;">41 Customers</h6>
+                </div>
+            </ion-col>
+        </ion-row>
+        <ion-row>
+            <ion-col><img src="../../assets/img/card-saopaolo.png"></ion-col>
+        </ion-row>
+
+    </ion-grid>
 </ion-content>
