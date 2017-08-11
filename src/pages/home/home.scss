@@ -1,15 +1,18 @@
 page-home {
     .card-background-page {
         ion-card {
+            align-self: 1;
             position: relative;
             text-align: center;
         }
         .icons {
             background-color: #fff;
-            border: 1px solid #7f8c8d;
+            border: 1.7px solid #7f8c8d;
             color: #7f8c8d;
-            margin: 0;
-            font-size: 0.9em;
+            margin: 1px;
+            font-size: 1.3em;
+            width: 30%;
+            height: 100%;
         }
         .name {
             margin: 0;

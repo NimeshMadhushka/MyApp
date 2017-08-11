@@ -5,14 +5,12 @@
         </ion-col>
         <ion-col col-9 class="button-container">
             <button class="icons" style="border: none;" (click)="login()">
-          <ion-icon name="cog"></ion-icon>
-        </button>
+                <ion-icon name="cog"></ion-icon>
+            </button>
             <button class="icons">
-          <ion-icon name="people"(click)="signup()"></ion-icon>
-        </button>
-            <button class="icons" (click)="signup()">
-          Log In
-        </button>
+                <ion-icon name="people"(click)="signup()"></ion-icon>
+            </button>
+            <button class="icons" (click)="signup()" round outline>Log In</button>
         </ion-col>
     </ion-row>
 
@@ -20,7 +18,7 @@
         <ion-col col-12>
             <h4 class="name">John Smith</h4>
             <p class="twittername">@johnsmith</p>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam quis ultrices quam, at interdum ante.</p>
+            <p>I've had a pretty messed up day...</p>
         </ion-col>
     </ion-row>
 
@@ -55,14 +53,6 @@
         <img src="../../assets/img/card-amsterdam.png">
         <div class="card-title">Amsterdam</div>
         <div class="card-subtitle">64 Customers</div>
-        </button>
-    </ion-card>
-
-    <ion-card>
-        <button (click)="goToDetailsPage()" block>
-        <img src="../../assets/img/card-sf.png">
-        <div class="card-title">San Francisco</div>
-        <div class="card-subtitle">72 Customers</div>
         </button>
     </ion-card>
 
