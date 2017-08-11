@@ -4,9 +4,34 @@ page-home {
             position: relative;
             text-align: center;
         }
+        .icons {
+            background-color: #fff;
+            border: 1px solid #7f8c8d;
+            color: #7f8c8d;
+            margin: 0;
+            font-size: 0.9em;
+        }
+        .name {
+            margin: 0;
+        }
+        .handle {
+            margin: 0;
+        }
+        .status {
+            white-space: normal;
+            color: #000;
+            margin-top: 5px;
+        }
+        .item {
+            align-items: baseline;
+        }
+        .button-container {
+            align-self: flex-end;
+            text-align: right;
+        }
         .card-item {
             width: 100%;
-            height: 100%;
+            height: 35%;
             background: linear-gradient(1deg, #ddd, #aad7eC)
         }
         .card-title {
@@ -23,12 +48,6 @@ page-home {
             top: 52%;
             width: 100%;
             color: #fff;
-        }
-        .item-avatar {
-            width: 55% !important;
-            height: 55% !important;
-            max-width: 100px !important; //any size
-            max-height: 100px !important; //any size 
         }
     }
 }

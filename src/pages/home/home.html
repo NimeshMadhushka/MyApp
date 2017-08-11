@@ -1,16 +1,46 @@
 <ion-content class="card-background-page">
+    <ion-row class="header">
+        <ion-col col-3>
+            <img src="../../assets/img/avatar1.jpg">
+        </ion-col>
+        <ion-col col-9 class="button-container">
+            <button class="icons" style="border: none;" (click)="login()">
+          <ion-icon name="cog"></ion-icon>
+        </button>
+            <button class="icons">
+          <ion-icon name="people"(click)="signup()"></ion-icon>
+        </button>
+            <button class="icons" (click)="signup()">
+          Log In
+        </button>
+        </ion-col>
+    </ion-row>
 
-    <ion-card>
-        <ion-item class="card-item">
-            <ion-avatar item-start>
-                <img src="../../assets/img/avatar1.jpg">
-            </ion-avatar>
-            <h2>Finn</h2>
-            <h3>Don't Know What To Do!</h3>
-            <p>I've had a pretty messed up day...</p>
-            <button ion-button item-right round color="primary" (click)="login()">Login</button>
-        </ion-item>
-    </ion-card>
+    <ion-row>
+        <ion-col col-12>
+            <h4 class="name">John Smith</h4>
+            <p class="twittername">@johnsmith</p>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam quis ultrices quam, at interdum ante.</p>
+        </ion-col>
+    </ion-row>
+
+    <ion-row>
+        <ion-col col-3>
+            <ion-icon name="pin"></ion-icon> Adelaide
+        </ion-col>
+        <ion-col col-9>
+            <ion-icon name="link"></ion-icon> johnsmith.com
+        </ion-col>
+    </ion-row>
+
+    <ion-row>
+        <ion-col col-4>
+            <strong>300</strong> FOLLOWING
+        </ion-col>
+        <ion-col col-8>
+            <strong>300</strong> FOLLOWERS
+        </ion-col>
+    </ion-row>
     <!--<button ion-button block color="light" (click)="signup()">Signup</button>-->
     <ion-card>
         <button (click)="goToDetailsPage()" block>
